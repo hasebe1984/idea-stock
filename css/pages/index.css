@@ -1,0 +1,15 @@
+.index-outer {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+}
+
+.index-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.index-position {
+    margin-left: 462px;
+}

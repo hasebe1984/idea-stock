@@ -1,0 +1,80 @@
+/* 1. Box Sizingを強制的にborder-boxに設定 */
+/* これにより、paddingやborderを含めて要素の幅・高さを計算でき、レイアウトが崩れにくくなる */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* 2. HTML要素の既定のスタイルを解除し、フォント継承をbodyからhtmlに設定 */
+/* marginとpaddingをゼロにし、すべてのスタイルリセットの基盤を作る */
+html {
+    -webkit-text-size-adjust: none;
+    /* iOSでのフォントサイズの自動調整をオフ */
+    font-family: sans-serif;
+    /* フォントを明示的に設定 */
+    line-height: 1.15;
+    /* テキストの行間をリセット */
+}
+
+/* 3. 既定のmarginとpaddingをリセット */
+/* bodyとすべての要素の既定の余白をゼロにする */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+    padding: 0;
+}
+
+/* 4. リストスタイルをリセット */
+ol,
+ul {
+    list-style: none;
+}
+
+/* 5. メディア要素のレスポンシブ対応と崩れ防止 */
+/* 画像などが親要素からはみ出すのを防ぎ、ディスプレイブロックとして扱う */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+    /* 親要素の幅を超えないようにする */
+}
+
+/* 6. テキストの継承とフォーム要素の標準化 */
+/* フォーム要素がフォント設定を継承するようにし、使いやすくする */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* 7. 不要なスクロールバーを防ぐ */
+/* overflowしている要素がない限り、スクロールバーを出さない */
+body {
+    overflow-x: hidden;
+}
+
+/* 8. 見出しの太字をリセット (必要な場合のみ) */
+/* 見出しを太字にしないことで、タイポグラフィの制御が容易になる */
+/*
+h1, h2, h3, h4, h5, h6 {
+  font-weight: inherit;
+}
+*/

@@ -1,0 +1,132 @@
+/* 
+全体
+ */
+* {
+    font-size: 16px;
+    font-weight: normal;
+    text-decoration: none;
+    color: #000;
+}
+
+section {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+/* 
+header
+ */
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 5vw 50px;
+}
+
+.header-wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+
+
+/* 
+タイトル
+ */
+h1 {
+    font-size: 18px;
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 24px;
+}
+
+/* 
+form関連
+ */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 12px 0;
+    /* border: 1px solid #000; */
+}
+
+.input-wrap {
+    width: 450px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+textarea {
+    height: 200px;
+}
+
+.input-text {
+    width: 350px;
+    height: 30px;
+    border: 2px solid #000;
+}
+
+/* 
+カード
+ */
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border: 1px solid #000;
+    padding: 12px;
+    margin-bottom: 5px;
+}
+
+.card-offset {
+    margin-left: 48px;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.card-date {
+    font-size: 12px;
+}
+
+.card-wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+    height: 30px;
+}
+
+
+
+/* 
+ボタン
+ */
+.input-submit,
+button {
+    width: 100px;
+    height: 30px;
+    display: inline-block;
+}
+
+.margin-left {
+    margin-left: 100px;
+}
+
+/* 
+エラーメッセージ
+ */
+span {
+    color: red;
+    font-weight: bold;
+}

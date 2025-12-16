@@ -1,0 +1,32 @@
+
+.card{
+  border:1px solid #000;
+  padding:12px;
+  margin:12px 0;
+  color:#000;
+}
+.meta{ font-size:12px; }
+
+/* 横並びのツールバー */
+.toolbar{
+  display:flex;
+  gap:8px;
+  justify-content:flex-end; /* 右寄せ。左寄せにしたいときは flex-start */
+  align-items:center;
+  flex-wrap:wrap;           /* 狭い画面で折り返し */
+  margin:12px 0;
+}
+.toolbar form{ margin:0; }  /* formの余白リセット */
+
+
+/* ボタン2つを横並びに */
+.actions{
+  display:flex;
+  gap:8px;            /* ボタン間のすき間 */
+  align-items:center; /* 垂直位置をそろえる */
+  flex-wrap:wrap;     /* 画面が狭いときは折り返し */
+}
+
+/* 既存の .inline は不要になるが、残してもOK（影響なし） */
+.inline{ display:inline; }
+

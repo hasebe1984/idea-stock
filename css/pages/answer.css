@@ -1,0 +1,17 @@
+.answer-textarea {
+  margin-left: 48px;
+  width: calc(100% - 48px);
+  resize: none;}
+
+.answer-actions {
+    margin-left: 48px;       /* テキストエリアと揃えたいなら */
+    display: flex;           /* 横並びにする */
+    align-items: center;     /* 縦位置をそろえる */
+    gap: 2px;                /* ボタンとエラーの間のすき間 */
+}
+.answer-error {
+    margin-left: 48px;   /* ← テキストエリアやボタンと同じだけ右にずらす */
+    color: red;
+    font-weight: bold;
+}
+
